@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <title>Basket World | Juegos</title>
     <script src="https://tailwindcss.com"></script>
+    <style>
+        .game-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            background: #000;
+            box-shadow: 0 0 30px rgba(249, 115, 22, 0.2);
+        }
+        .game-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 </head>
-<body class="bg-zinc-950 text-white font-sans p-5">
-    <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl font-black text-orange-500 mb-2 uppercase">🏀 BASKET WORLD</h1>
-        <p class="text-zinc-400 mb-6 italic">¡Bienvenido a tu zona de juegos!</p>
+<body class="bg-zinc-950 text-white font-sans flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl text-center">
+        <h1 class="text-5xl font-black text-orange-500 mb-2 italic">🏀 BASKET WORLD</h1>
+        <p class="text-zinc-400 mb-8 text-lg font-medium">¡Zona de juegos desbloqueada!</p>
         
-        <!-- Contenedor del Juego -->
-        <div class="relative rounded-2xl overflow-hidden border-4 border-zinc-800 shadow-2xl bg-black" style="padding-bottom: 56.25%; height: 0;">
+        <!-- Este enlace es de un servidor que NO bloquea la conexión -->
+        <div class="game-wrapper border-4 border-zinc-800">
             <iframe 
-                src="https://github.io" 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-                frameborder="0" 
+                src="https://googleusercontent.com" 
                 allowfullscreen>
             </iframe>
         </div>
-        
-        <p class="mt-6 text-zinc-500 text-xs uppercase tracking-widest">Si el juego no carga, intenta recargar la página</p>
+
+        <div class="mt-8">
+            <p class="text-zinc-600 text-sm italic">Si ves la pantalla negra, espera 5 segundos a que cargue el juego.</p>
+        </div>
     </div>
+
 </body>
 </html>
