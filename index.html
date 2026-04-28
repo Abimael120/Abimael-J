@@ -2,16 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mis Juegos de Basket</title>
+    <title>Basket World | Juegos</title>
     <script src="https://tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white p-10 text-center">
-    <h1 class="text-4xl font-bold text-orange-500 mb-5">🏀 BASKET WORLD</h1>
-    <p class="mb-8">¡Bienvenido a mi página de juegos!</p>
-    
-    <div class="max-w-4xl mx-auto border-4 border-orange-500 rounded-xl overflow-hidden bg-zinc-900">
-        <!-- Este es el juego real -->
-       <iframe src="https://github.io" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+<body class="bg-zinc-950 text-white font-sans p-5">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl font-black text-orange-500 mb-2 uppercase">🏀 BASKET WORLD</h1>
+        <p class="text-zinc-400 mb-6 italic">¡Bienvenido a tu zona de juegos!</p>
+        
+        <!-- Contenedor del Juego -->
+        <div class="relative rounded-2xl overflow-hidden border-4 border-zinc-800 shadow-2xl bg-black" style="padding-bottom: 56.25%; height: 0;">
+            <iframe 
+                src="https://github.io" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <p class="mt-6 text-zinc-500 text-xs uppercase tracking-widest">Si el juego no carga, intenta recargar la página</p>
     </div>
 </body>
 </html>
